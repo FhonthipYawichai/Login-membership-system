@@ -1,0 +1,96 @@
+
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Member</title>
+    
+       <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+    <style>
+        body{
+            margin:5%;
+            background-image: url("https://powerpointboy.com/wp-content/uploads/2019/02/mail-sub-bg.png");
+            background-color: #cccccc;
+        }
+        input{
+        width: 150px;
+        background-color:#FFF0F5;
+        color:black;
+    }
+       
+        h2{
+            color:green;
+        }
+
+        button{
+        width: 50px;
+        height: 30px;
+        background-color:  rgb(217, 243, 201);
+        border-radius: 10px;
+        font-size: 16px;
+        color: black;
+    }
+       
+    </style>
+    <center>
+    <body>
+        <h2>Add New Membership</h2>
+        <form action="add.php" name="fAdd" method="POST">
+            <table >
+            <tr>
+                <td>ID</td>
+                <td><input type="text" name ="mem_id"> </td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name ="fname"> </td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name ="lname"> </td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name ="username"> </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" name ="password"> </td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="text" name ="email"> </td>
+            </tr>
+            <tr>
+                <td>Telephone</td>
+                <td><input type="text" name ="tel"> </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" name ="address"> </td><br>
+            </tr>
+            <br><br>
+            <tr >
+                <td>
+                    <br><br><input type="submit" value="Save"> &nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <br><br> <input type="reset" value="clear"> 
+                </td>
+            </tr>
+            </table>
+        </form>
+        <br><br> <button onclick="document.location='member.php'">&nbsp<span class="glyphicon glyphicon-home" ></span> &nbsp </button>
+    </body>
+</center>
+    </html>
